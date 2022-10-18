@@ -1,76 +1,79 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>과제1</title>
     <style>
-        html, body {margin: 30px}
-        input::placeholder {color:black;}
-        caption{
-            text-align: left;
+        .p1 {
+            margin-left: 8px;
+            width: 130px;
+            text-align: right;
+            padding-right: 8px;
+            display: inline-block;
+
+        }
+        .blue{
             font-weight: bold;
             background-color: lightblue;
-            width: 800px;
             padding-left: 10px;
-
         }
-        span.red {
-            color:red
-        }
-
-
+       span{
+           color: red;
+           size: 10px;
+       }
+       .b1 {
+           margin-left: 200px;
+       }
+       .ma{
+           margin: 5px;
+       }
+       .mab{
+           margin: 5px 0px 5px 0px;
+       }
 
     </style>
-
 </head>
 <body>
+<h2>취업 정보 계정 만들기</h2>
 <form>
-    <h2>취업 정보 계정 만들기</h2>
-    <span class="red">* 필수 입력 항목</span> <br><br>
-    <table>
-        <caption id="box">기본정보</caption>
-        <tbody>
-        <tr><td>이 름<span class="red">*</span></td> <td><input type="text" value="" size="8"></td></tr>
-        <tr><td>이메일<span class="red">*</span></td> <td><input type="email" placeholder="id@domain_name" size="15"></td></tr>
-        <tr><td>암호<span class="red">*</span></td> <td><input type="password" value="" size="12"></td></tr>
-        <tr><td>암호 확인<span class="red">*</span></td> <td><input type="password" value="" size="12"></td></tr>
-        <tr><td>모바일 폰<span class="red">*</span></td> <td><input type="tel" placeholder="010-0000-0000" size="13"></td></tr>
-        <tr><td>개인 홈페이지</td> <td><input type="url" placeholder="http://" size="30"></td></tr>
-        <tr><td>주소<span class="red">*</span></td> <td><input type="text" value="" size="30"></td></tr>
-        </tbody>
-    </table>
-    <table>
-        <caption>학 력</caption>
-        <tbody>
-        <tr><td>학교 명<span class="red">*</span></td> <td><input type="text" value="" size="12"></td></tr>
-        <tr><td>전 공 명<span class="red">*</span></td> <td><input type="text" value="" size="12"></td></tr>
-        <tr><td>졸업 여부<span class="red">*</span></td>
-        <td><select name="grad">
+    <span>* 필수 입력 항목</span>
+    <br><br>
+    <div class="blue">기본 정보</div>
+    <br><br>
+    <div class="p1">이 름<span>*</span></div><input class="ma" type="text" value="" size="8"><br>
+    <div class="p1">이메일<span>*</span></div><input class="ma" type="email" placeholder="id@domain_name" size="15"><br>
+    <div class="p1">암호<span>*</span></div><input class="ma" type="password" value="" size="12"><br>
+    <div class="p1">암호 확인<span>*</span></div><input class="ma" type="password" value="" size="12"><br>
+    <div class="p1">모바일 폰<span>*</span></div><input class="ma" type="tel" placeholder="010-0000-0000" size="13"><br>
+    <div class="p1">개인 홈페이지 </div><input class="ma" type="url" placeholder="http://" size="30"><br>
+    <div class="p1">주소<span>*</span></div><input class="ma" type="text" value="" size="30">
+    <br><br>
+    <div class="blue">학 력</div>
+    <br><br>
+    <div class="p1">학교 명<span>*</span></div><input class="ma" type="text" value="" size="12"><br>
+    <div class="p1">전 공<span>*</span></div><input class="ma" type="text" value="" size="12"><br>
+    <div class="p1">졸업 여부<span>*</span></div>
+        <select class="mab" name="grad">
             <option value="1"> ---선택--- </option>
             <option value="2"> 졸업예정 </option>
             <option value="3"> 졸업 </option>
-        </select></td></tr>
-        <tr><td>졸업(예정)일</td> <td><input type="date" value="연도-월-일"></td></tr>
-        </tbody>
-    </table>
-    <table>
-        <caption>업무 경력</caption>
-        <tbody>
-        <tr><td>근무업체명</td> <td><input type="text" value="" size="20"></td></tr>
-        <tr><td>직 위</td> <td><input type="text" value="" size="10"></td></tr>
-        <tr><td>담당 업무</td> <td><textarea rows="10" cols="80">이전 업체에서 담당한 업무를 기술하시오.</textarea></td></tr>
-        <tr><td>근무년수</td> <td><input type="number" min="0" max="10" step="0.5">년</td></tr>
-        </tbody>
-    </table>
-    <table>
-        <caption>자기소개서</caption>
-        <tbody>
-        <tr><td>첨부 파일 <input type="file"></td>
-            <td><input type="submit" value="제출"></td>
-            <td><input type="reset" value="재작성"></td></tr>
-        </tbody>
-    </table>
+        </select><br>
+    <div class="p1">졸업(예정)일</div><input class="ma" type="date" value="연도-월-일">
+    <br><br>
+    <div class="blue">업무 경력</div>
+    <br><br>
+    <div class="p1">근무업체명</div><input class="ma" type="text" value="" size="20"><br>
+    <div class="p1">직 위</div><input class="ma" type="text" value="" size="10"><br>
+    <div class="p1">담당 업무</div> <textarea class="mab" rows="10" cols="80">이전 업체에서 담당한 업무를 기술하시오.</textarea><br>
+    <div class="p1">근무년수</div><input class="ma" type="number" min="0" max="10" step="0.5">년
+    <br><br>
+    <div class="blue">자기소개서</div>
+    <br><br>
+    <div class="p1">첨부 파일</div><input type="file"><br>
+    <label class="b1"><input type="submit" value="제출">
+        <input type="reset" value="재작성"></label>
 </form>
-
 </body>
 </html>
+
