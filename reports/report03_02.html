@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function prev_row(height){
+            var pascal = [[1], [1,1]] ;
+            for (i=0; i<height; i ++){
+                if (i==0 || i == 1){
+                    document.write(pascal[i]+ '<br>');
+
+                } else {
+                    pascal[i] = new_row(pascal[i-1]);
+                    document.write(pascal[i] +'<br>');
+                }
+            console.log(i +'=' + pascal[i]);
+
+            }
+        function new_row(p_row) {
+                var n_row = new Array();
+                for (j=1;j<(p_row.length); j++){
+                    n_row[0] = 1;
+                    n_row[j] = p_row[j-1] + p_row[j]
+                    n_row[p_row.length] = 1
+                }
+                return n_row
+
+        }
+        }
+    </script>
+</head>
+<body>
+<script>
+    var height = prompt('높이를 입력하세요 :');
+    var result = prev_row(height);
+    console.log(height + '--->' + result);
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+      function bin_to_hex(number){
+        var hex = parseInt(number,2).toString(16);
+        return hex
+      }
+    </script>
+</head>
+<body>
+<script>
+  var my_number = prompt('2진수를 입력하세요') ;
+  var n_16 = bin_to_hex(my_number) ;
+
+  console.log(my_number + '--->' + n_16) ;
+  document.write('<p>' + my_number + '--->' + n_16 +'</p>') ;
+</script>
+
+</body>
+</html>
