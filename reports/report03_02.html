@@ -7,12 +7,17 @@
         function prev_row(height){
             var pascal = [[1], [1,1]] ;
             for (i=0; i<height; i ++){
-                if (i==0 || i == 1){
+                if (i==0 ){
                     document.write(pascal[i]+ '<br>');
 
+                } else if (i == 1) {
+                    document.write(pascal[i][0]+ ' ' +pascal[i][1] +'<br>');
                 } else {
                     pascal[i] = new_row(pascal[i-1]);
-                    document.write(pascal[i] +'<br>');
+                    for(j=0; j<i+1; j++){
+                     document.write(pascal[i][j] + ' ');
+                    }
+                    document.write('<br>');
                 }
             console.log(i +'=' + pascal[i]);
 
