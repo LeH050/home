@@ -49,12 +49,12 @@ p:last-child {
  * Selection color
  */
 ::-moz-selection {
-  background-color: #fa6862;
+  background-color: #8C74C8;
   color: #fff;
 }
 
 ::selection {
-  background-color: #fa6862;
+  background-color: #8C74C8;
   color: #fff;
 }
 
@@ -103,7 +103,7 @@ label {
 }
 
 .btn-primary {
-  background-color: #fa6862;
+  background-color: #8C74C8;
   border: 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 700;
@@ -113,7 +113,7 @@ label {
   text-transform: uppercase;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:focus {
-  background-color: #f9423a;
+  background-color: #8C74C8;
 }
 
 .btn-border {
@@ -158,7 +158,7 @@ label {
 
 .primary,
 .link:hover {
-  color: #fa6862;
+  color: #8C74C8;
 }
 
 .no-gutter {
@@ -186,7 +186,7 @@ label {
 }
 
 .nicescroll-cursors {
-  background: #fa6862 !important;
+  background: #8C74C8 !important;
 }
 
 .preloader {
@@ -204,7 +204,7 @@ label {
 }
 
 .loading-mask {
-  background-color: #fa6862;
+  background-color: #8C74C8;
   height: 100%;
   left: 0;
   position: absolute;
@@ -240,7 +240,7 @@ label {
 	Start Styling
 -------------------------------------------------*/
 .site-wrapper {
-  border-top: 4px solid #fa6862;
+  border-top: 4px solid #8C74C8;
 }
 
 .page-close {
@@ -255,7 +255,9 @@ label {
   margin-bottom: 75px;
 }
 .page-title img {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  position: relative;
+  left: -60px;
 }
 .page-title h2 {
   font-size: 68px;
@@ -302,7 +304,7 @@ label {
   bottom: 14px;
 }
 .section-title h3::after {
-  background-color: #fa6862;
+  background-color: #8C74C8;
   width: 73px;
 }
 .section-title.light h3 {
@@ -370,7 +372,7 @@ label {
 }
 .hexagon-item:hover .hex-item div::before,
 .hexagon-item:hover .hex-item div::after {
-  background-color: #fa6862;
+  background-color: #8C74C8;
 }
 .hexagon-item:hover .hex-content svg {
   transform: scale(0.97);
@@ -546,7 +548,7 @@ label {
   flex-grow: 1;
 }
 .progress .bar {
-  background-color: #fa6862;
+  background-color: #8C74C8;
   border-radius: 10px;
   height: 8px;
   width: 0;
@@ -567,8 +569,8 @@ label {
   border-bottom: 2px solid transparent;
 }
 .filter .active {
-  color: #fa6862;
-  border-bottom-color: #fa6862;
+  color: #8C74C8;
+  border-bottom-color: #8C74C8;
 }
 
 .works-item {
@@ -608,7 +610,7 @@ label {
   transform: translate3d(0px, 0px, 0px) scale(0);
 }
 .works-item h4 {
-  color: #fa6862;
+  color: #8C74C8;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -758,7 +760,7 @@ label {
   transform: scale(1.5);
 }
 .service-hex:hover .st1 {
-  fill: #fa6862;
+  fill: #8C74C8;
 }
 .service-hex:hover .content {
   width: 135%;
@@ -854,7 +856,7 @@ label {
   display: none;
 }
 .testimonials .slick-dots .slick-active button {
-  border-color: #fa6862;
+  border-color: #8C74C8;
 }
 
 .tm-hex {
@@ -971,13 +973,13 @@ label {
   transform: translate(-50%, -50%);
 }
 .contact-social li:hover span {
-  background-color: #fa6862;
+  background-color: #8C74C8;
 }
 .contact-social li:hover span::before {
-  border-bottom-color: #fa6862;
+  border-bottom-color: #8C74C8;
 }
 .contact-social li:hover span::after {
-  border-top-color: #fa6862;
+  border-top-color: #8C74C8;
 }
 
 .contact-social-hex {
@@ -985,7 +987,7 @@ label {
   position: relative;
   width: 43px;
   height: 24.83px;
-  background-color: #1e2530;
+  background-color: #8C74C8;
   margin: 12.41px 0;
   transition: all 0.3s ease 0s;
 }
@@ -1007,10 +1009,10 @@ label {
   border-top: 12.41px solid #1e2530;
 }
 .contact-social-hex:hover::after {
-  border-bottom-color: #fa6862;
+  border-bottom-color: #8C74C8;
 }
 .contact-social-hex:hover::before {
-  border-top-color: #fa6862;
+  border-top-color: #8C74C8;
 }
 
 .contact-form .input-field {
@@ -1023,7 +1025,7 @@ label {
   margin-left: 5px;
 }
 .contact-form .input-field label.error {
-  color: #ff0000;
+  color: #8C74C8;
   font-size: 13px;
   margin: 0;
 }
@@ -1072,7 +1074,7 @@ label {
 }
 
 .msg-success {
-  color: #fa6862;
+  color: #8C74C8;
 }
 
 .pt-table.desktop-768 .pt-tablecell {
@@ -1244,6 +1246,7 @@ label {
   .page-title .title-bg {
     font-size: 100px;
   }
+
   .author-image-large {
     position: static;
     margin-bottom: 50px;
