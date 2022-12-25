@@ -269,6 +269,10 @@ label {
 }
 .page-title p {
   font-size: 16px;
+  font-family: 'NanumSquare', sans-serif ;
+}
+p {
+  font-family: 'NanumSquare', sans-serif ;
 }
 .page-title .title-bg {
   color: rgba(30, 37, 48, 0.07);
