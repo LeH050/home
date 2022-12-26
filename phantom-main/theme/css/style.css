@@ -657,7 +657,7 @@ p {
 
 .history-item {
   display: table;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'NanumSquare', sans-serif;
   padding-left: 32px;
   margin-bottom: 20px;
   width: 100%;
@@ -688,6 +688,9 @@ p {
 .history-item span {
   color: #aaaaaa;
   font-size: 12px;
+}
+.history-item:hover {
+  background-color: #8C74C8;
 }
 
 .history-hex {
