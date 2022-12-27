@@ -1,104 +1,193 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-</head>
-<body>
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
 
-<section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="../images/disney1.jpg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="../images/photo1.jpg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="../images/travel1.jpg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="../images/food1.jpg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="../images/banner.jpg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="../images/favicon.png" alt="..." />
-                        </div>
-                    </div>
-                </div>
+<!--
+THEME: Phantom - Bootstrap Portfolio Template
+VERSION: 1.0.0
+AUTHOR: Themefisher
+
+HOMEPAGE: https://themefisher.com/products/phantom-best-bootstrap-portfolio-template/
+DEMO: https://demo.themefisher.com/phantom/
+GITHUB: https://github.com/themefisher/Phantom-Bootstrap-Portfolio-Template
+
+WEBSITE: https://themefisher.com
+TWITTER: https://twitter.com/themefisher
+FACEBOOK: https://www.facebook.com/themefisher
+-->
+
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+
+  <!-- ** Basic Page Needs ** -->
+  <meta charset="utf-8">
+  <title>Phantom - Bootstrap Portfolio Template</title>
+
+  <!-- ** Mobile Specific Metas ** -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Portfolio HTML Template">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <meta name="author" content="Themefisher">
+  <meta name="generator" content="Themefisher Html5 Portfolio Template v1.0">
+
+  <!-- theme meta -->
+  <meta name="theme-name" content="phantom" />
+
+  <!-- Essential Stylesheets -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Open+Sans:400,600,700,800">
+  <link rel="stylesheet" href="../plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../plugins/animate.css">
+  <link rel="stylesheet" href="../plugins/slick/slick.css">
+  <link rel="stylesheet" href="../plugins/slick/slick-theme.css">
+  <link rel="stylesheet" href="../plugins/themefisher-fonts/css/themefisher-fonts.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css">
+
+  <!-- Theme Stylesheet -->
+  <link rel="stylesheet" href="#" id="color-changer">
+
+  <!--Favicon-->
+  <link rel="icon" href="../images/favicon.png" type="image/x-icon">
+
+</head>
+<body><!-- set class="dark" on body tag for DARK-THEME -->
+
+  <div class="preloader">
+    <div class="loading-mask"></div>
+    <div class="loading-mask"></div>
+    <div class="loading-mask"></div>
+    <div class="loading-mask"></div>
+    <div class="loading-mask"></div>
+  </div>
+
+
+
+<main class="site-wrapper">
+  <div class="pt-table">
+    <div class="pt-tablecell page-quotes relative">
+      <!-- .close -->
+      <a href="../../" class="page-close"><i class="tf-ion-close"></i></a>
+      <!-- /.close -->
+
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+            <div class="page-title text-center">
+              <h2><span class="primary">Impressive</span> things<span class="title-bg">Phrases</span></h2>
+              <p id ="under_title"> 직접 듣거나 읽고 인상 깊었던 문구들을 소개합니다</p>
             </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+          </div>
+        </div> <!-- /.row -->
+
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="testimonials">
+              <div class="item">
+                <figure class="thumb">
+                  <img src="../images/food1.jpg">
+                  <figcaption>
+                    <h4>문명</h4>
+                    <span>베르나르 베르베르</span>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="item">
+                <figure class="thumb">
+
+                  <figcaption>
+                    <h4 >무드 오브 퓨처  </h4>
+                    <span>윤이나, 이윤정, 한송희 <br>
+                      김효인, 오정연</span>
+                  </figcaption>
+                </figure>
+                <div class="text" style=" width: 450px; height: 130px">
+                  <p>"가끔이어도 좋으니 부디 행복하세요" </p>
                 </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
+              </div>
+              <div class="item">
+                <figure class="thumb">
+
+
+                <div class="text">
+                  <p>"If you can dream it, you can do it. Always remember that this whole thing
+                    was started with a dream and a mouse." </p>
+                </div></figure>
+              </div>
+              <div class="item">
+                <figure class="thumb">
+
+                  <figcaption>
+                    <h4>Stranger Things</h4>
+                    <span>a drama series</span>
+                  </figcaption>
+                </figure>
+                <div class="text" class="text" style=" width: 450px; height: 130px">
+                  <p>"Ordinary people have never achieved anything meaningful in the world."</p>
                 </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download me-2"></i>
-                        Free Download!
-                    </a>
+              </div>
+              <div class="item">
+                <figure class="thumb">
+
+                  <figcaption>
+                    <h4>유재석</h4>
+                    <span>MC</span>
+                  </figcaption>
+                </figure>
+                <div class="text" style=" width: 450px; height: 130px">
+                  <p>"'뻔'한 이야기보다 '펀(Fun)'한 이야기를 해라. <br>
+                    디즈니만큼 재미나게 해라." </p>
                 </div>
+              </div>
+              <div class="item">
+                <figure class="thumb">
+
+                  <figcaption>
+                    <h4>YOUTH</h4>
+                    <span>기현 미니 앨범 1집 타이틀</span>
+                  </figcaption>
+                </figure>
+                <div class="text" style=" width: 450px; height: 130px">
+                  <p>"애쓰지 않더라도 행복하고 싶어" </p>
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
+        </div> <!-- /.row -->
+      </div> <!-- /.container -->
+
+      <nav class="page-nav clear">
+  <div class="container">
+    <div class="flex flex-middle space-between">
+      <span class="prev-page"><a href="works.html" class="link">&larr; Prev Page</a></span>
+      <span class="copyright">Copyright &copy; 2021, Designed &amp; Developed by <a href="https://themefisher.com/">Themefisher</a>.</span>
+      <span class="next-page"><a href="contact.html" class="link">Next Page &rarr;</a></span>
+
+    </div>
+  </div>
+  <!-- /.page-nav -->
+</nav>
+      <!-- /.container -->
+
+    </div> <!-- /.pt-tablecell -->
+  </div> <!-- /.pt-table -->
+</main> <!-- /.site-wrapper -->
+
+
+<!--
+Essential Scripts
+=====================================-->
+<script src="../plugins/jquery-2.2.4.min.js"></script>
+<script src="../plugins/bootstrap/bootstrap.min.js"></script>
+<script src="../plugins/jquery.nicescroll.min.js"></script>
+<script src="../plugins/isotope/isotope.pkgd.min.js"></script>
+<script src="../plugins/slick/slick.min.js"></script>
+
+<script src="../js/script.js"></script>
+
 </body>
 </html>

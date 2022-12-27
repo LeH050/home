@@ -20,6 +20,11 @@ a {
   color: inherit;
   transition: all 0.3s ease 0s;
 }
+#lee:hover{
+  color: #8C74C8;
+  font-weight: bold;
+}
+
 a:hover, a:focus {
   color: #ababab;
   text-decoration: none;
