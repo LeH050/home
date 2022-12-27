@@ -996,7 +996,7 @@ p {
   position: relative;
   width: 43px;
   height: 24.83px;
-  background-color: #8C74C8;
+  background-color: #1e2530;
   margin: 12.41px 0;
   transition: all 0.3s ease 0s;
 }
@@ -1018,10 +1018,10 @@ p {
   border-top: 12.41px solid #1e2530;
 }
 .contact-social-hex:hover::after {
-  border-bottom-color: #8C74C8;
+  border-bottom-color: #1e2530;
 }
 .contact-social-hex:hover::before {
-  border-top-color: #8C74C8;
+  border-top-color: #1e2530;
 }
 
 .contact-form .input-field {
