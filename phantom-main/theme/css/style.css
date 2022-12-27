@@ -278,7 +278,7 @@ label {
   font-size: 16px;
   font-family: 'NanumSquare', sans-serif ;
 }
-p {
+p , .card-header, .card-title{
   font-family: 'NanumSquare', sans-serif ;
 }
 .page-title .title-bg {
